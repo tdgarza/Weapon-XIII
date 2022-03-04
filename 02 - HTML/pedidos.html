@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Pedidos</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+<body>
+  <div align="center"> <img src="./logopasteles1.png" alt="Logo Pasteleria" width="350px"></div>
+  <h1 align="center">Levanta tu pedido</h1>
+  <form method="post" action="pedido.html">
+
+   <titulo><h2>Pasteles preparados:</h2></titulo>
+    <select name="relleno" id="relleno">
+      <option value="PasteldeChocolate">Pastel de Chocolate (Grande)</option>
+      <option value="roscaadiccion">Pastel Rosca Adiccion (Grande)</option>
+      <option value="capricho">Pastel Capricho (Grande)</option>
+      <option value="zanahoria">Pastel de Zanahoria (Grande)</option>
+      <option value="moka">Pastel de Moka</option>
+      <option value="fresa">Pastel Freza sin Azucar</option>
+    </select>
+
+
+<h2>Harina:</h2>
+<input type="checkbox" name="topping1" id="topping1" value="Chocolate">
+<label for="topping1">Chocolate</label><br>
+<input type="checkbox" name="topping2" id="topping2" value="Fresa">
+<label for="topping2">Fresa</label><br>
+<input type="checkbox" name="topping3" id="topping3" value="Vainilla">
+<label for="topping3">Vainilla</label><br>
+<input type="checkbox" name="topping4" id="topping4" value="Zanahoria">
+<label for="topping4">Zanahoria</label><br>
+<input type="checkbox" name="topping5" id="topping5" value="Limon">
+<label for="topping4">Limon</label><br>
+
+<h2>Adornos:</h2>
+<input type="checkbox" name="adorno1" id="adorno1" value="caramelosuave">
+<label for="adorno1">Caramelo suave</label><br>
+<input type="checkbox" name="adorno2" id="adorno2" value="frutas">
+<label for="adorno2">Frutas</label><br>
+<input type="checkbox" name="adorno3" id="adorno3" value="fondant">
+<label for="adorno3">Fondant</label><br>
+<input type="checkbox" name="adorno4" id="adorno4" value="chantilly">
+<label for="adorno4">Chantilly</label><br>
+<input type="checkbox" name="adorno5" id="adorno5" value="merengue">
+<label for="adorno5">Merengue</label><br>
+<input type="checkbox" name="adorno6" id="adorno6" value="3d">
+<label for="adorno6">Decoraciones 3D</label><br>
+<input type="checkbox" name="adorno7" id="adorno7" value="geometricas">
+<label for="adorno7">Decoraciones geométricas</label><br>
+<input type="checkbox" name="adorno8" id="adorno8" value="florales">
+<label for="adorno8">Decoraciones florales</label><br>
+<input type="checkbox" name="adorno9" id="adorno9" value="naked">
+<label for="adorno9">Decoración semidesnuda o naked</label><br>
+<input type="checkbox" name="adorno10" id="adorno10" value="drip">
+<label for="adorno10">Decoración drip cake</label><br>
+
+<h2>Rellenos:</h2>
+<select name="relleno" id="relleno">
+  <option value="Mermelada">Mermelada</option>
+  <option value="Ganache">Ganache</option>
+  <option value="Crema para batir">Crema para batir</option>
+  <option value="Decoración semidesnuda o naked">Decoración semidesnuda o naked</option>
+  <option value="Decoración drip cakes">Decoración drip cakes</option>
+</select>
+
+<h2>Contacto</h2>
+  <table> 
+    <tr>
+      <td><label for="nombre">Nombre</label></td>
+      <td><input type="text" id="nombre" name="nombre" placeholder="Nombre"></td>
+    </tr>
+    <tr>
+      <td><label for="apellido">Apellido</label></td>
+      <td><input type="text" id="apellido" name="apellido" placeholder="Apellido"></td>
+    </tr>
+    <tr>
+      <tr>
+        <td><label for="telefono">Telefono</label></td>
+        <td><input type="text" id="telefono" name="telefono" placeholder="A 10 digitos"></td>
+      </tr>
+      <tr>
+      <td><label for="email">E-Mail</label></td>
+     <td> <input type="email" id="correo" name="correo" placeholder="E-Mail"></td>
+    </tr>
+    <tr>
+      <td><label for="fecha1">Fecha de entrega</label></td>
+     <td>  <input type="date" id="fecha1" name="fecha1"><br></td>
+    </tr>
+    <tr>
+      <td><label for="fecha2">Hora de entrega</label></td>
+     <td>  <input type="time" id="fecha2" name="fecha2"></td>
+    </tr>
+
+
+  </table>
+  </form>
+  
+  <h3>Realizar pedido</h3>
+  <input type="reset" value="Limpiar formulario"><br>
+  <input type="button" id="boton1" name="boton1" value="Realizar Pedido" onclick="alert('Pedido Realizado');"><br><br>
+
+</body>
+</html>
