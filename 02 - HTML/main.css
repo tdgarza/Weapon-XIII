@@ -1,0 +1,20 @@
+body {
+    background-color: #372069;
+
+  }
+
+h1 { color: rgb(255, 255, 255); }
+h2 { color: rgba(219, 246, 134, 1.0) }
+h3 { color: rgb(244, 133, 153); }
+p  { color: WHITE; }
+li  { color: #372069; }
+td {color:rgba(244, 133, 153)}
+th { color: #372069; }
+label{color: rgba(244, 133, 153);}
+.swing-top-fwd {
+	-webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.center{
+  text-align: center;
+}
